@@ -165,18 +165,17 @@ func (m Map) findPath() Path {
 func FindPath() {
 	// 初始化地图
 	maps := Map{
-		width:  100,
-		height: 100,
-		start:  Point{7, 7},
-		end:    Point{9, 9},
-		obstacles: []Point{
-			Point{8, 7},
-			Point{8, 8},
-		},
+		width:     2560,
+		height:    2560,
+		start:     Point{2324, 608},
+		end:       Point{2489, 443},
+		obstacles: []Point{},
 	}
 	// 寻路
-	path := maps.findPath()
-	// 打印路径
-	fmt.Println("path", path)
 
+	path := maps.findPath()
+
+	// 打印路径
+	fmt.Println("path", path.points)
+	//fmt.Println("path", len(path.points))
 }

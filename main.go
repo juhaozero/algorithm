@@ -1,7 +1,7 @@
 package main
 
 import (
-	"algorithm/skip"
+	"algorithm/search"
 	"math/rand"
 
 	"time"
@@ -9,7 +9,7 @@ import (
 
 func main() {
 	rand.Seed(time.Now().UnixNano() / 1e6)
-	//search.FindPath()
+	search.FindPath()
 	//tree.CreatTree()
-	skip.CreatSkipList()
+	//skip.CreatSkipList()
 }
